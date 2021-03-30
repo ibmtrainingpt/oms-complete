@@ -11,9 +11,19 @@ public class Order {
 	private String item;
 	@NotNull
 	private float price;
+	@NotNull
+	private float tax;
 	
 	public float getPrice() {
 		return price;
+	}
+
+	public float getTax() {
+		return tax;
+	}
+
+	public void setTax(float tax) {
+		this.tax = tax;
 	}
 
 	public void setPrice(float price) {
